@@ -1,3 +1,4 @@
+import { CategoryService } from './category.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
@@ -68,7 +69,8 @@ import { ProductFormComponent } from './admin/product-form/product-form.componen
     AuthService,
     AuthGuardService,
     UserService,
-    AdminAuthGuardService
+    AdminAuthGuardService,
+    CategoryService,
   ],
   bootstrap: [AppComponent]
 })
