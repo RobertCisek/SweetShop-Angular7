@@ -9,13 +9,6 @@ export class CategoryService {
   constructor(private db: AngularFireDatabase) { }
 
   getCategories () {
-    debugger
     return this.db.list('/categories').valueChanges();
-    // , {
-    //   query: {
-    //     orderByChild: 'name'
-    //   }
-    // }
-    // );
   }
 }
