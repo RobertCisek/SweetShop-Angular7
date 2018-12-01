@@ -11,4 +11,5 @@ export class CategoryService {
   getCategories () {
     return this.db.list('/categories').valueChanges();
   }
+
 }
